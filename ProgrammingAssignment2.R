@@ -1,7 +1,5 @@
 #######Peer Graded Programming Assignment####
 ###Lexical Scoping######
-setwd("C:/Users/kthapa.MAGUIRE/Desktop/Coursera-R  Programming")
-getwd()
 
 ####Creating special "matrix" object that can cache its inverse.
 makeCacheMatrix <- function(x =is.matrix()) {
@@ -30,10 +28,4 @@ cacheSolve <- function(x=is.matrix()) {
         x$setInverse(inverse_x)
         inverse_x ####Return the inverse matrix
         }
-
-######TEST########################
-test_matrix<-makeCacheMatrix(matrix(1:4, 2,2))
-test_matrix$get()
-test_matrix$getInverse()
-cacheSolve(test_matrix)
 
